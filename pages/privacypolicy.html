@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/esdiac@2x-1.png" />
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <title>Esdiac Nigeria – Be Connected</title>
+</head>
+
+<body>
+    <header class="sticky top-0 h-38 bg-white py-[1.8rem] z-50">
+        <div class="w-[95%] md:w-[83%] mx-auto">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center justify-between">
+                    <img class="w-12 h-12 mr-20" src="../assets/images/esdiac@2x-1.png" alt="Esdiac Nigeria logo" />
+                    <div class="hidden md:flex items-center header_links text-[#001A33]">
+                        <a href="../index.html" class="pb-2 px-3 hover:border-b-4 hover:border-[#61CE70] border-b-4  border-[#ffffff]">
+                            <span>Home</span>
+                        </a>
+                        <a href="../pages/callrate.html"
+                            class="mx-6 pb-2 px-3 hover:border-b-4 hover:border-[#61CE70] border-b-4  border-[#ffffff]">
+                            <span>Call Rate</span>
+                        </a>
+                        <a href="../pages/buycredit.html"
+                            class="mr-6 pb-2 px-3 hover:border-b-4 hover:border-[#61CE70] border-b-4  border-[#ffffff]">
+                            <span>Buy Credit</span>
+                        </a>
+                        <a href="../pages/agents.html"
+                            class="pb-2 px-3 hover:border-b-4 hover:border-[#61CE70] border-b-4  border-[#ffffff]">
+                            <span>Agents</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <ul class="flex items-center">
+                        <li class="mr-6">
+                            <a class=""
+                                href="https://play.google.com/store/apps/details?id=com.esdiac.android&hl=en&gl=US"
+                                target="_blank">
+                                <div class="flex items-center bg-[#001A33] px-8 py-3 text-white rounded-full shadow-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-google-play w-4 h-4 mr-2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
+                                    </svg>
+                                    Android App
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="https://apps.apple.com/us/app/esdiac-international-calling/id1399127012"
+                                target="_blank">
+                                <div
+                                    class="flex items-center bg-[#259549] px-[1.6rem] py-3 text-white rounded-full shadow-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-apple w-4 h-4 mr-2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                                        <path
+                                            d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                                    </svg>
+                                    IOS App
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:hidden bg-gray-100 p-2 rounded shadow-sm cursor-pointer" id="menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x w-8 h-8 hidden"
+                        id="close" viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="bi bi-list text-[#001A33] w-8 h-8" id="list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="w-full bg-white text-center hidden header_links mt-6 transition-all duration-300 ease-in-out"
+                id="nav_links">
+                <a class="w-full block hover:bg-[#55595c] mb-[1px] py-3 text-[#001A33] hover:text-white" href="../index.html">
+                    <span>Home</span>
+                </a>
+                <a class="w-full block bg-[#55595c] mb-[1px] text-white py-3" href="../pages/callrate.html">
+                    <span>Call Rate</span>
+                </a>
+                <a class="w-full block hover:bg-[#55595c] mb-[1px] text-[#001A33] hover:text-white py-3" href="../pages/buycredit.html">
+                    <span>Buy Credit</span>
+                </a>
+                <a class="w-full block hover:bg-[#55595c] py-3 text-[#001A33] hover:text-white" href="../pages/agents.html">
+                    <span>Agents</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- banner -->
+    <section class="w-full pt-56 pb-24 bg-[#001A33]">
+        <div class="text-center">
+            <h2 class="font-semibold text-5xl text-white">Privacy Policy</h2>
+        </div>
+    </section>
+    <!-- Payment option cards -->
+    <section class="w-full bg-gray-50">
+        <div class="w-[95%] md:w-[60%] mx-auto">
+            <p class="text-lg text-gray-600 pt-16">
+                Esdiac Global System respects the privacy of our users.
+                This Privacy Policy explains how we collect, use, disclose,
+                and safeguard your information when you visit our mobile application
+                (Esdiac App) and website. Please read this Privacy Policy carefully.
+            </p>
+            <p class="text-lg text-gray-600 mt-8">
+                IF YOU DO NOT AGREE WITH THE TERMS OF THIS PRIVACY POLICY,
+                PLEASE DO NOT ACCESS THE APPLICATION.
+            </p>
+            <p class="text-lg text-gray-600 mt-16">
+                We reserve the right to make changes to this Privacy Policy at any
+                time and for any reason. We will alert you about any changes by
+                updating the “Last updated” date of this Privacy Policy. You are
+                encouraged to periodically review this Privacy Policy to stay
+                informed of updates. You will be deemed to have been made aware of,
+                will be subject to, and will be deemed to have accepted the changes
+                in any revised Privacy Policy by your continued use of the website
+                and Application after the date such revised Privacy Policy is posted.
+            </p>
+            <p class="text-lg text-gray-600 my-16">
+                This Privacy Policy does not apply to the third-party
+                online/mobile store from which you install the Application
+                or make payments. We are not responsible for any of the data
+                collected by any such third party.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                1. Information We Collect <br />
+                We collection the following information;<br />
+                Personal Data you provide us directly:
+
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                Your name, e-mail, country you reside in, phone number and password when you register for an Esdiac App
+                account. However, we do not have access or store your passwords and you can only reset your passwords to
+                update your passwords.<br />
+                Profile information that you provide for your user profile such as your name, email, picture and phone
+                number.<br />
+                Communications between you and Esdiac. For example, we may send you service-related emails (such as
+                account verifications, changes/updates to features of the Service, technical and security notices). Note
+                you may not opt out of Service-related e-mails.
+
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                2. Your Mobile Device <br />
+                We collect device and connection-specific information when you install, access, or use our services.
+                This include information such as your device mac address on the point of registration or any other
+                mobile device from which you use to access the Esdiac App. We may keep and store such information and
+                associate it with your use, in order to help Esdiac identify you and facilitate your use of our service
+                in the future.<br />
+                We may provide features that rely on the use of additional information on your mobile device or require
+                access to certain services on your mobile device that will enhance your experience but not be required
+                to use the Service. Granting the App permission does not mean you are granting us access to that
+                information or that the App will access specific information without your permission or store the
+                information the App access. To the contrary, for each type of information listed in this section, before
+                the App access this information, or these features on your mobile device, permission will be asked.
+                <br />
+                In particular:
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                Photos and Camera: The app will not access your photos or camera without first getting your explicit
+                permission and we will never scan or import your photo library or camera roll. The App needs permission
+                to the camera, so that you can make a video call through the app and then photos so that you can update
+                your profile picture.<br />
+                Voice: The App will not access your microphone without getting your explicit permission. You will always
+                have the ability to disable microphone access.<br />
+                Contacts: The App will not scan or import your contacts stored on your phone without getting your
+                explicit permission, and We do not access or store your contacts stored on your phone, it is only used
+                by the App to display your contacts to you on the app to have smooth and easier user experience.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                3. Financial Data <br />
+                We do not collect any of your credit card details, or any other related financial information,
+                irrespective of the payment method you choose to order or purchase our call credit unit. We only ask for
+                your shipping address (Legal name, address, city, country, zip code and phone number) which must be the
+                same with the billing address to help us verify user making the transaction and in the case of returns
+                or if you didn’t authorize the transaction. Otherwise, all financial information is stored by our
+                payment processor, Braintree Payments, and you are encouraged to review their privacy policy and contact
+                them directly for responses to your questions.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                4. Push Notifications<br />
+                We may request to send you push notifications regarding your account or the Application. If you wish to
+                opt-out from receiving these types of communications, you may turn them off in your device’s settings.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                5. Use of Information<br />
+                Having accurate information about you permits us to provide you with a smooth, efficient, and customized
+                experience. Specifically, we may use information collected about you via the Application to:
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                Confirm your identity and verify your personal and contact details, to fulfil relevant agreements with
+                you and to otherwise administer our business relationship with you.
+                Help you efficiently access your information whenever you sign in.
+                Remember your information so that you would not have to re-enter it during your visit or the next time
+                you visit the Service;
+                To conduct payment for services.
+                Marketing, product and customer analysis to improve our Services and to optimize our offer to customers.
+                Product and Customer analysis for internal operation including troubleshooting, testing, research and
+                statistical purpose.
+                To carry out risk analysis, fraud detection and risk, management to prevent misuse of the services to
+                keep the services safe and secure.
+                To communicate with you about our services and provide customer support.
+                To establish, exercise or defend a legal claim or collection procedures.
+                To improve our services and for general business development purposes, such as developing new products
+                and features and to explore new business opportunities.
+                Assist law enforcement and respond to subpoena.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                6. Accessing the Services <br />
+                In order to access certain features of the Services, you will need to provide your name, email, country
+                you reside in, phone number, password and create an account. At anytime you want to login, you will need
+                to provide your phone number and password for verification before you can use the Services on the mobile
+                app. You are responsible for your log-in details. You are fully accountable for any use or misuse of
+                your Account and personal details as a result of conveying your datils to someone else. You must
+                maintain your log-in details in absolute confidentiality and avoid disclosing them to others.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                7. Do We Collect Cookies <br />
+                Yes. Cookies are small files that a site or its service provider transfer to your computer hard drive
+                through your Web browser (if you allow), that enables the site or service provider’s systems to
+                recognize your browser, capture and remember certain information. They are also used to help us
+                understand your preferences based on previous or current site activity, which enables us to provide you
+                with improved services.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                8. We use Cookies for the Following <br />
+                To help us compile aggregate data about site traffic and site interaction so that we can offer better
+                site experiences and tools in the future. We may also use trusted third-party services that track this
+                information on our behalf.<br />
+                You can choose to have your computer warn you each time a cookie is being sent, or you can choose to
+                turn off all cookies. You can do this through your browser’s settings. Since browsers differ, look at
+                your browser Help Menu to learn the correct way to modify your cookies.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                9. If Users Disable Cookies<br />
+                When cookies are disabled, some of the features that make your site experience more efficient may not
+                function properly.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                10. Disclosure of your Information<br />
+                If we believe the release of information about you is necessary to respond to legal process, to
+                investigate or remedy potential violations of our policies, or to protect the rights, property, and
+                safety of others, we may share your information as permitted or required by any applicable law, rule, or
+                regulation. This includes exchanging information with other entities for fraud protection and credit
+                risk reduction.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                By Law or to Protect Rights: If we believe the release of information about you is necessary to respond
+                to legal process, to investigate or remedy potential violations of our policies, or to protect the
+                rights, property, and safety of others, we may share your information as permitted or required by any
+                applicable law, rule, or regulation. This includes exchanging information with other entities for fraud
+                protection and credit risk reduction.<br />
+                Third-Party Service Providers: We may share your information with third parties that perform services
+                for us or on our behalf, including payment processing, data analysis, email delivery, hosting services,
+                customer service, and marketing assistance.<br />
+                Marketing Communications: With your consent, or with an opportunity for you to withdraw consent, we may
+                share your information with third parties for marketing purposes, as permitted by law.
+                Affliates:We may share your information with our affiliates, in which case we will require those
+                affiliates to honor this Privacy Policy. Affiliates include our parent company and any subsidiaries,
+                joint venture partners or other companies that we control or that are under common control with us.
+                Business Partners:We may share your information with our business partners to offer you certain
+                products, services or promotions.<br />
+                Other Third Parties:We may share your information with advertisers and investors for the purpose of
+                conducting general business analysis. We may also share your information with such third parties for
+                marketing purposes, as permitted by law.<br />
+                Sale or Bankruptcy:If we reorganize or sell all or a portion of our assets, undergo a merger, or are
+                acquired by another entity, we may transfer your information to the successor entity. If we go out of
+                business or enter bankruptcy, your information would be an asset transferred or acquired by a third
+                party. You acknowledge that such transfers may occur, and that the transferee may decline honor
+                commitments we made in this Privacy Policy.<br />
+                We are not responsible for the actions of third parties with whom you share personal or sensitive data,
+                and we have no authority to manage or control third-party solicitations. If you no longer wish to
+                receive correspondence, emails or other communications from third parties, you are responsible for
+                contacting the third party directly.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                11. Do We Collect Cookies<br />
+                We do not include or offer third-party products or services on our App or website.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                12. Security of your Information<br />
+                We use administrative, technical, and physical security measures to help protect your personal
+                information. While we have taken reasonable steps to secure the personal information you provide to us,
+                please be aware that despite our efforts, no security measures are perfect or impenetrable, and no
+                method of data transmission can be guaranteed against any interception or other type of misuse. Any
+                information disclosed online is vulnerable to interception and misuse by unauthorized parties.
+                Therefore, we cannot guarantee complete security if you provide personal information.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                13. California Online Privacy Right<br />
+                CalOPPA is the first state law in the nation to require commercial websites and online services to post
+                a privacy policy. The law’s reach stretches well beyond California to require any person or company in
+                the United States (and conceivably the world) that operates websites collecting Personally Identifiable
+                Information from California consumers to post a conspicuous privacy policy on its website stating
+                exactly the information being collected and those individuals or companies with whom it is being shared.
+                See more at:
+                http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf n
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                14. ACCORDING TO CalOPPA<br />
+                We agree to do the following: Users can visit our site anonymously. Once this privacy policy is created,
+                we will add a link to it on our home page or as a minimum, on the first significant page after entering
+                our website. Our Privacy Policy link includes the word Privacy and can easily be found on the page
+                specified above.<br />
+                You will be notified of any Privacy Policy changes.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                15. Emails and Communications
+                If you no longer wish to receive correspondence, emails, or other communications from us, you may
+                opt-out by:
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                Noting your preferences at the time you register your account with the Application.
+                Logging into your account settings and updating your preferences.
+                Contacting us using the contact information provided below.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                16. How Does Our Site Handle Do Not Track Signals <br />
+                We don’t honor Do Not Track signals and Do Not Track, plant cookies, or use advertising when a Do Not
+                Track (DNT) browser mechanism is in place. We don’t honor them because:
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                Full compliance of DNT is currently being implemented.<br />
+                Currently information from browsers that send this signal are discarded during processing.<br />
+                In the future, we will implement measures to not collect the information if this signal is presented
+                with a request.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                17. Does Our Site and App allow Third-Party Behavioral Tracking?<br />
+                It’s also important to note that we do not allow third-party behavioral tracking.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                18. COPPA (Children Online Privacy Protection Act)<br />
+                When it comes to the collection of personal information from children under the age of 13 years old, the
+                Children’s Online Privacy Protection Act (COPPA) puts parents in control. The Federal Trade Commission,
+                United States’ consumer protection agency, enforces the COPPA Rule, which spells out what operators of
+                websites and online services must do to protect children’s privacy and safety online. We do not
+                specifically market to children under the ages of 13 years old. If you become aware of any data we have
+                collected from children under age 13, please contact us using the contact information provided below.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                19. Fair Information Practices<br />
+                The Fair Information Practices Principles form the backbone of privacy law in the United States and the
+                concepts they include have played a significant role in the development of data protection laws around
+                the globe. Understanding the Fair Information Practice Principles and how they should be implemented is
+                critical to comply with the various privacy laws that protect personal information.
+                In order to be in line with Fair Information Practices we will take the following responsive action,
+                should a data breach occur:
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                We will notify you via email within 7 business days.<br />
+                We will notify the users via in-site notification within 1 business day.<br />
+                We also agree to the Individual Redress Principle which requires that individuals have the right to
+                legally pursue enforceable rights against data collectors and processors who fail to adhere to the law.
+                This principle requires not only that individuals have enforceable rights against data users, but also
+                that individuals have recourse to courts or government agencies to investigate and/or prosecute
+                non-compliance by data processors.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                CAN SPAM Act <br />
+                The CAN-SPAM Act is a law that sets the rules for commercial email, establishes requirements for
+                commercial messages, gives recipients the right to have emails stopped from being sent to them, and
+                spells out tough penalties for violations. We collect your email address in order to:
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                Process orders and to send information and updates pertaining to orders. <br />
+                Market to our mailing list or continue to send emails to our clients after the original transaction has
+                occurred.
+                Send you additional information related to your product and/or service.<br />
+                To be in accordance with CANSPAM, we agree to the following:
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                Not use false or misleading subjects or email addresses.
+                Identify the message as an advertisement in some reasonable way.
+                Include the physical address of our business or site headquarters.
+                Monitor third-party email marketing services for compliance, if one is used.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                21. California Privacy Rights
+                California Civil Code Section 1798.83, also known as the “Shine The Light” law, permits our users who
+                are California residents to request and obtain from us, once a year and free of charge, information
+                about categories of personal information (if any) we disclosed to third parties for direct marketing
+                purposes and the names and addresses of all third parties with which we shared personal information in
+                the immediately preceding calendar year. If you are a California resident and would like to make such a
+                request, please submit your request in writing to us using the contact information provided below.
+            </p>
+            <p class="text-lg text-gray-600 pb-16">
+                Contact Information<br/>
+                Company name: Esdiac Globaly System<br/>
+                Address: 3251 W 6th Street, Suite 308, Los Angeles, CA 90020, United States<br/>
+                : (213) 351-1348 : (855) 373-4222<br/>
+                Last Edited on 06-24-2019.
+            </p>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-[#001A33] text-white py-6">
+        <div class="w-[95%] md:w-[83%] mx-auto">
+            <div class="md:flex md:justify-between">
+                <div>
+                    <img class="w-24 h-24 mb-6 md:mb-0" src="../assets/images/esdiac-logo-white-768x768.png"
+                        alt="Esdiac logo" />
+                    <h2 class="text-white opacity-80 mt-6">
+                        At ESDIAC we believe in innovation, <br /> in honest marketing and advertisement <br />
+                        of our products, and providing <br /> you with the best possible experience.
+                    </h2>
+                </div>
+                <div class="grid grid-cols-1">
+                    <div class="mt-8 md:mt-0 mb-8 md:mb-0">
+                        <div class="flex justify-between items-center">
+                            <h2 class="mb-2 md:mb-6 text-sm font-semibold text-white uppercase">Information
+                            </h2>
+                        </div>
+                        <ul class="text-white opacity-80">
+                            <li class="mb-4">
+                                <a href="#">Our Products</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="../pages/howitworks.html">How it Works</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="../pages/aboutus.html">About Us</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="../pages/termsofservice.html">Terms of Service</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="../pages/privacypolicy.html">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1">
+                    <div class="mb-8 md:mb-0">
+                        <div class="flex justify-between items-center">
+                            <h2 class="mb-2 md:mb-6 text-sm font-semibold text-white uppercase">Contact us
+                            </h2>
+                        </div>
+                        <ul class="text-white opacity-80">
+                            <li class="mb-4">
+                                <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-geo-alt-fill w-5 h-5 mr-2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                    </svg>
+                                    <span>
+                                        Esdiac Global Systems Nig. Ltd <br />
+                                        2357 Alhaji Bature Street
+                                        Talhudu, Kano State.
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="mb-4">
+                                <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-telephone-fill w-5 h-5 mr-2" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                    </svg>
+                                    <span>+234 (0704)154-0296</span>
+                                </div>
+                            </li>
+                            <li class="mb-0">
+                                <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-envelope-at-fill w-5 h-5 mr-2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z" />
+                                        <path
+                                            d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z" />
+                                    </svg>
+                                    <span>www.esdiacapp.ng</span>
+                                </div>
+                            </li>
+                            <li class="mb-4 ml-[30px]">
+                                <span>www.esdiacoffice.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-600" />
+            <div class="">
+                <span class="block text-sm text-white text-center opacity-80">
+                    &copy;2022 Esdiac Global Systems Nig. Ltd. All rights reserved.
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../assets/js/index.js"></script>
+
+</html>

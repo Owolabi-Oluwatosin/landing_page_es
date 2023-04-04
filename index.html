@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/esdiac@2x-1.png" />
+    <link rel="icon" type="image/x-icon" href="../public/assets/esdiac@2x-1.png" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <title>Esdiac Nigeria – Be Connected</title>
+</head>
+
+<body>
+    <header class="sticky top-0 h-38 bg-white py-[1.8rem] z-50">
+        <div class="w-[95%] md:w-[83%] mx-auto">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center justify-between">
+                    <img class="w-12 h-12 mr-20" src="./assets/images/esdiac@2x-1.png" alt="Esdiac Nigeria logo" />
+                    <div class="hidden md:flex items-center header_links text-[#001A33]">
+                        <a href="./index.html" class="border-b-4 pb-2 px-3 border-[#61CE70]">
+                            <span>Home</span>
+                        </a>
+                        <a href="./pages/callrate.html"
+                            class="mx-6 pb-2 px-3 hover:border-b-4 hover:border-[#61CE70] border-b-4  border-[#ffffff]">
+                            <span>Call Rate</span>
+                        </a>
+                        <a href="./pages/buycredit.html"
+                            class="mr-6 pb-2 px-3 hover:border-b-4 hover:border-[#61CE70] border-b-4  border-[#ffffff]">
+                            <span>Buy Credit</span>
+                        </a>
+                        <a href="./pages/agents.html"
+                            class="pb-2 px-3 hover:border-b-4 hover:border-[#61CE70] border-b-4  border-[#ffffff]">
+                            <span>Agents</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <ul class="flex items-center">
+                        <li class="mr-6">
+                            <a class=""
+                                href="https://play.google.com/store/apps/details?id=com.esdiac.android&hl=en&gl=US"
+                                target="_blank">
+                                <div class="flex items-center bg-[#001A33] px-8 py-3 text-white rounded-full shadow-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-google-play w-4 h-4 mr-2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
+                                    </svg>
+                                    Android App
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="https://apps.apple.com/us/app/esdiac-international-calling/id1399127012"
+                                target="_blank">
+                                <div
+                                    class="flex items-center bg-[#259549] px-[1.6rem] py-3 text-white rounded-full shadow-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-apple w-4 h-4 mr-2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                                        <path
+                                            d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                                    </svg>
+                                    IOS App
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:hidden bg-gray-100 p-2 rounded shadow-sm cursor-pointer" id="menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x w-8 h-8 hidden"
+                        id="close" viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="bi bi-list text-[#001A33] w-8 h-8" id="list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="w-full bg-white text-center hidden header_links mt-6 transition-all duration-300 ease-in-out"
+                id="nav_links">
+                <a class="w-full block bg-[#55595c] mb-[1px] text-white py-3" href="./index.html">
+                    <span>Home</span>
+                </a>
+                <a href="./pages/callrate.html" class="w-full block hover:bg-[#55595c] mb-[1px] py-3 text-[#001A33] hover:text-white">
+                    <span>Call Rate</span>
+                </a>
+                <a class="w-full block hover:bg-[#55595c] mb-[1px] py-3 text-[#001A33] hover:text-white" href="./pages/buycredit.html"
+                    class="mr-6 pb-2 px-3 hover:border-b-4 hover:border-[#61CE70] border-b-4  border-[#ffffff]">
+                    <span>Buy Credit</span>
+                </a>
+                <a href="./pages/agents.html" class="w-full block hover:bg-[#55595c] py-3 text-[#001A33] hover:text-white">
+                    <span>Agents</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- First main -->
+    <main class="w-[95%] md:w-[83%] mx-auto">
+        <div class="md:flex justify-between">
+            <div class="block md:hidden" id="esdiac_map"></div>
+            <div class="mt-4 md:mt-20">
+                <h2 class="uppercase font-extralight text-sm text-[#19191A] text-center md:text-left">Be Connected</h2>
+                <h2 class="text-[#001A33] font-semibold text-[35px] text-center md:text-left">Make Cheap International
+                    Calls</h2>
+                <h6 class="font-extralight text-[#001A33] text-[35px] text-center md:text-left">From Nigeria</h6>
+                <p class="md:w-[70%] mt-6 text-center md:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.
+                    Ut elit tellus, luctus nec
+                    ullamcorper mattis, pulvinar dapibus leo.
+                </p>
+                <!-- <div class="md:flex items-center mt-8 mb-16 md:mb-0">
+                    <div class="md:mr-6 mb-4 md:mb-0">
+                        <a class="flex justify-center items-center bg-[#001A33] px-12 py-2 text-white rounded-md shadow-sm"
+                            href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-apple w-8 h-8 mr-2"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                                <path
+                                    d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                            </svg>
+                            <div>
+                                <span class="text-md font-extralight opacity-90">Download on the</span><br />
+                                <span class="font-[600px] text-lg">App Store</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="flex justify-center items-center bg-[#001A33] px-11 py-2 text-white rounded-md shadow-sm"
+                            href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="bi bi-google-play w-8 h-8 mr-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
+                            </svg>
+                            <div>
+                                <span class="text-md font-extralight opacity-90">Get it on</span><br />
+                                <span class="font-[600px] text-lg">Google Play</span>
+                            </div>
+                        </a>
+                    </div>
+                </div> -->
+                <div class="flex justify-center md:justify-start items-center mt-10 mb-16 md:mb-0">
+                    <a href="https://play.google.com/store/apps/details?id=com.esdiac.android&hl=en&gl=US" target="_blank">
+                        <img class="w-[140px] md:w-[216px] h-[44px] md:h-[64px] mr-6"
+                            src="./assets/images/640px-Google_Play_Store_badge_EN.svg_.webp" alt="Esdiac Apple app link" />
+                    </a>
+                    <a href="https://apps.apple.com/us/app/esdiac-international-calling/id1399127012" target="_blank">
+                        <img class="w-[140px] md:w-[216px] h-[44px] md:h-[64px]"
+                            src="./assets/images/1280px-Download_on_the_App_Store_Badge.svg_-1024x303.webp"
+                            alt="Esdiac Android app link" />
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <img class="map" src="./assets/images/esdiac@2x-973x1024.png" alt="Esdiac map" />
+            </div>
+        </div>
+    </main>
+    <section class="bg-[#001A33] text-white p-4">
+        <div class="w-[95%] md:w-[83%] mx-auto">
+            <h2 class="text-center uppercase font-extralight text-sm">Welcome to</h2>
+            <h2 class="text-center uppercase font-semibold text-[35px]">Esdiac Nigeria</h2>
+            <div class="md:grid grid-cols-3 gap-4">
+                <div class="mt-6">
+                    <img src="./assets/images/09-1024x1024.jpeg" alt="Esdiac Nigeria Agent" />
+                    <h2 class="font-semibold text-2xl py-4">Make Cheap Calls</h2>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut elit tellus, luctus nec
+                        ullamcorper mattis, pulvinar dapibus leo.
+                    </p>
+                </div>
+                <div class="mt-6"><img src="./assets/images/04.jpeg" alt="Esdiac Nigeria Agent" />
+                    <h2 class="font-semibold text-2xl py-4">Make Cheap Calls</h2>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut elit tellus, luctus nec
+                        ullamcorper mattis, pulvinar dapibus leo.
+                    </p>
+
+                </div>
+                <div class="mt-6">
+                    <img src="./assets/images/03-1024x1024.jpeg" alt="Esdiac Nigeria Agent" />
+                    <h2 class="font-semibold text-2xl py-4">Make Cheap Calls</h2>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut elit tellus, luctus nec
+                        ullamcorper mattis, pulvinar dapibus leo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w-[95%] md:w-[83%] mx-auto my-14">
+        <div class="md:flex items-center justify-between">
+            <div class="mb-10 md:mr-16">
+                <img class="mobile-img mx-auto" decoding="async" width="228" height="300"
+                    src="./assets/images/Group-3267-228x300.png" alt="Esdiac mobile app" />
+            </div>
+            <div>
+                <h2 class="text-[#001A33] font-semibold text-[35px] text-center">Make Cheap International Calls</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Ut elit tellus, luctus nec
+                    ullamcorper mattis, pulvinar dapibus leo.
+                </p>
+                <!-- <div class="md:flex items-center mt-8">
+                    <div class="md:mr-6 mb-4 md:mb-0">
+                        <a href="#"
+                            class="flex justify-center items-center bg-[#001A33] px-12 py-2 text-white rounded-md shadow-sm">
+                            <div class="mr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-apple w-8 h-8"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                                    <path
+                                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="text-md font-extralight opacity-90">Download on the</span><br />
+                                <span class="font-[600px] text-lg">App Store</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#"
+                            class="flex justify-center items-center bg-[#001A33] px-11 py-2 text-white rounded-md shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="bi bi-google-play w-8 h-8 mr-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
+                            </svg>
+                            <div>
+                                <span class="text-md font-extralight opacity-90">Get it on</span><br />
+                                <span class="font-[600px] text-lg">Google Play</span>
+                            </div>
+                        </a>
+                    </div>
+                </div> -->
+                <div class="flex justify-center items-center mt-8">
+                    <a href="https://play.google.com/store/apps/details?id=com.esdiac.android&hl=en&gl=US" target="_blank">
+                        <img class="w-[140px] md:w-[216px] h-[44px] md:h-[64px] mr-6"
+                            src="./assets/images/640px-Google_Play_Store_badge_EN.svg_.webp" alt="Esdiac Apple app link" />
+                    </a>
+                    <a href="https://apps.apple.com/us/app/esdiac-international-calling/id1399127012" target="_blank">
+                        <img class="w-[140px] md:w-[216px] h-[44px] md:h-[64px]"
+                            src="./assets/images/1280px-Download_on_the_App_Store_Badge.svg_-1024x303.webp"
+                            alt="Esdiac Android app link" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-[#001A33] text-white py-6">
+        <div class="w-[95%] md:w-[83%] mx-auto">
+            <div class="md:flex md:justify-between">
+                <div>
+                    <img class="w-24 h-24 mb-6 md:mb-0" src="./assets/images/esdiac-logo-white-768x768.png"
+                        alt="Esdiac logo" />
+                    <h2 class="text-white opacity-80 mt-6">
+                        At ESDIAC we believe in innovation, <br /> in honest marketing and advertisement <br />
+                        of our products, and providing <br /> you with the best possible experience.
+                    </h2>
+                </div>
+                <div class="grid grid-cols-1">
+                    <div class="mt-8 md:mt-0 mb-8 md:mb-0">
+                        <div class="flex justify-between items-center">
+                            <h2 class="mb-2 md:mb-6 text-sm font-semibold text-white uppercase">Information
+                            </h2>
+                        </div>
+                        <ul class="text-white opacity-80">
+                            <li class="mb-4">
+                                <a href="#">Our Products</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="./pages/howitworks.html">How it Works</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="./pages/aboutus.html">About Us</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="./pages/termsofservice.html">Terms of Service</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="./pages/privacypolicy.html">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1">
+                    <div class="mb-8 md:mb-0">
+                        <div class="flex justify-between items-center">
+                            <h2 class="mb-2 md:mb-6 text-sm font-semibold text-white uppercase">Contact us
+                            </h2>
+                        </div>
+                        <ul class="text-white opacity-80">
+                            <li class="mb-4">
+                                <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-geo-alt-fill w-5 h-5 mr-2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                    </svg>
+                                    <span>
+                                        Esdiac Global Systems Nig. Ltd <br />
+                                        2357 Alhaji Bature Street
+                                        Talhudu, Kano State.
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="mb-4">
+                                <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-telephone-fill w-5 h-5 mr-2" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                    </svg>
+                                    <span>+234 (0704)154-0296</span>
+                                </div>
+                            </li>
+                            <li class="mb-0">
+                                <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-envelope-at-fill w-5 h-5 mr-2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z" />
+                                        <path
+                                            d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z" />
+                                    </svg>
+                                    <span>www.esdiacapp.ng</span>
+                                </div>
+                            </li>
+                            <li class="mb-4 ml-[30px]">
+                                <span>www.esdiacoffice.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-600" />
+            <div class="">
+                <span class="block text-sm text-white text-center opacity-80">
+                    &copy;2022 Esdiac Global Systems Nig. Ltd. All rights reserved.
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./assets/js/index.js"></script>
+
+</html>

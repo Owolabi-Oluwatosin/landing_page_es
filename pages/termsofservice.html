@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/esdiac@2x-1.png" />
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <title>Esdiac Nigeria – Be Connected</title>
+</head>
+
+<body>
+    <header class="sticky top-0 h-38 bg-white py-[1.8rem] z-50">
+        <div class="w-[95%] md:w-[83%] mx-auto">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center justify-between">
+                    <img class="w-12 h-12 mr-20" src="../assets/images/esdiac@2x-1.png" alt="Esdiac Nigeria logo" />
+                    <div class="hidden md:flex items-center header_links text-[#001A33]">
+                        <a href="../index.html" class="pb-2 px-3 hover:border-b-4 hover:border-[#61CE70] border-b-4  border-[#ffffff]">
+                            <span>Home</span>
+                        </a>
+                        <a href="../pages/callrate.html"
+                            class="mx-6 pb-2 px-3 hover:border-b-4 hover:border-[#61CE70] border-b-4  border-[#ffffff]">
+                            <span>Call Rate</span>
+                        </a>
+                        <a href="../pages/buycredit.html"
+                            class="mr-6 pb-2 px-3 hover:border-b-4 hover:border-[#61CE70] border-b-4  border-[#ffffff]">
+                            <span>Buy Credit</span>
+                        </a>
+                        <a href="../pages/agents.html"
+                            class="pb-2 px-3 hover:border-b-4 hover:border-[#61CE70] border-b-4  border-[#ffffff]">
+                            <span>Agents</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <ul class="flex items-center">
+                        <li class="mr-6">
+                            <a class=""
+                                href="https://play.google.com/store/apps/details?id=com.esdiac.android&hl=en&gl=US"
+                                target="_blank">
+                                <div class="flex items-center bg-[#001A33] px-8 py-3 text-white rounded-full shadow-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-google-play w-4 h-4 mr-2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
+                                    </svg>
+                                    Android App
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="https://apps.apple.com/us/app/esdiac-international-calling/id1399127012"
+                                target="_blank">
+                                <div
+                                    class="flex items-center bg-[#259549] px-[1.6rem] py-3 text-white rounded-full shadow-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-apple w-4 h-4 mr-2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                                        <path
+                                            d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                                    </svg>
+                                    IOS App
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:hidden bg-gray-100 p-2 rounded shadow-sm cursor-pointer" id="menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x w-8 h-8 hidden"
+                        id="close" viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="bi bi-list text-[#001A33] w-8 h-8" id="list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="w-full bg-white text-center hidden header_links mt-6 transition-all duration-300 ease-in-out"
+                id="nav_links">
+                <a class="w-full block hover:bg-[#55595c] mb-[1px] py-3 text-[#001A33] hover:text-white" href="../index.html">
+                    <span>Home</span>
+                </a>
+                <a class="w-full block bg-[#55595c] mb-[1px] text-white py-3" href="../pages/callrate.html">
+                    <span>Call Rate</span>
+                </a>
+                <a class="w-full block hover:bg-[#55595c] mb-[1px] text-[#001A33] hover:text-white py-3" href="../pages/buycredit.html">
+                    <span>Buy Credit</span>
+                </a>
+                <a class="w-full block hover:bg-[#55595c] py-3 text-[#001A33] hover:text-white" href="../pages/agents.html">
+                    <span>Agents</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- banner -->
+    <section class="w-full pt-56 pb-24 bg-[#001A33]">
+        <div class="text-center">
+            <h2 class="font-semibold text-5xl text-white">Terms of Service</h2>
+        </div>
+    </section>
+    <!-- Payment option cards -->
+    <section class="w-full bg-gray-50">
+        <div class="w-[95%] md:w-[60%] mx-auto">
+            <p class="text-lg text-gray-600 pt-16">
+                1. Introduction<br />
+                These Terms of Service (“Terms”) govern your access and use of Esdiac Global System Inc.’s (“Esdiac”,
+                ”us”, “our”, ”we”) services. On this Website and or through our authorized retailers that provide our
+                consumers with the following services.
+            </p>
+            <p class="text-lg text-gray-600 mt-8">
+                • Esdiac’s prepaid calling card telecommunications service that enables consumers to call
+                internationally.<br />
+                • Esdiac App telecommunication services which enables consumers to make international calls through the
+                App on their mobile devices.
+
+            </p>
+            <p class="text-lg text-gray-600 mt-16">
+                By accessing the website at <a class="text-blue-500"
+                    href="https://www.esdiacapp.com">https://www.esdiacapp.com</a> and <a class="text-blue-500" y
+                    href="https://www.esdiaccallingcard.com">https://www.esdiaccallingcard.com</a> purchasing or using
+                our products and services, you are agreeing that you have carefully read these Terms of use, Privacy
+                Policy (as applicable) (collectively the “agreement”) and you are bound by agreement, all applicable
+                laws and regulations, and agree that you are responsible for compliance with any applicable local laws.
+                These terms set forth your rights and obligations with respect to your use of the website, the App and
+                the prepaid calling card. If you do not agree with any of these terms contained in these terms of use
+                and terms of agreement, you should not use the Esdiac service.
+            </p>
+            <p class="text-lg text-gray-600 my-8">
+                2. Profile and Personal Information
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>2.1 Profile Information</strong> In order to use Esdiac App, you must create a member profile on
+                the App. The member profile entails your name, email address, country of residence, phone number and
+                password, which you are required to choose, Esdiac may verify the email you provided at the point of
+                registration.
+
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>2.2 Personal Information</strong> You agree and confirm that the personal information you
+                provided us at the point of registration shall be true, accurate, up-to-date and complete in all
+                mandatory fields. You agree to accurately and completely update any of your personal information. You
+                agree that we may verify all information that you provide. If any information that you provided proves
+                to be inaccurate and incomplete, Esdiac reserves the right to suspend or terminate your Services.
+
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>2.3 Personal Data You Provide</strong> To use the service, you may provide information such as
+                your name, email address, country you reside in and phone number. You may also provide us with your
+                shipping information when you want to fund your account through the App. You may provide us with
+                information in relation with your user experience of our Services and how to reach you for customer
+                support. We recommend that you choose a string password that is hard to guess and keep it safe. You are
+                responsible for keeping your password safe and do not responds to unsolicited request to provide your
+                credit card details, password or any other personal data.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>2.4 Data We Collect</strong> We collect device, diagnostic, crash, log files, website,
+                performance logs, report and service-related information. You agree that Esdiac may collect this
+                information but not limited to, to help facilitate and improve your experience of our Services.
+                Information about you that may be collected during registration by Esdiac and through the Service, how
+                it is used and protected in compliance with applicable law is governed by
+                <a href="https://esdiacapp.com/privacy-policy/" class="text-blue-500">Esdiac Privacy Policy</a>
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                3. The Services <br />
+                Esdiac Global System Inc. provides telecommunication services for consumers to make international calls
+                at a high quality and cheap rate. Esdiac offers termination in several locations and we do not claim to
+                support terminations in all countries or all phone numbers or that will always guarantee to support
+                termination to any particular country or phone number. Our Service is intended for international calls
+                only, not locally. We do not currently offer subscriptions or any kind of plans to our users. Esdiac
+                offers a Caller ID for all its services. That is, we do not assign rented numbers to our users, whenever
+                you initiate a call, your number will show as the Caller ID.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>3.1 Esdiac App.</strong> With Esdiac App, you can place outbound internet-based international
+                calls directly to any destination’s conventional telephone number (as long as we support the region
+                where your contact is) without your contact having Esdiac’s App. To use Esdiac App, you must create an
+                account with us and fund the account.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                You can only create an account through the app and no other medium. We currently offer pay-as-you-go
+                plan and your call credit does not expire. You are responsible for keeping your password safe at all
+                times. We may disclose any information regarding your account to anyone who correctly quotes your phone
+                number and your password. Esdiac also provides Video calls for all its registered App users at a cheap
+                rate. You can do video calls with any of your contacts that has our App registered on the phone at a
+                cheap rate. .
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>3.2 Esdiac Prepaid Calling Card.</strong> We offer prepaid calling card service for you to make
+                outbound international calls through a landline or your mobile phone without internet presence on your
+                device or your contact’s irrespective of device they use. You do not need to be a registered member or
+                have Esdiac App to use our prepaid calling card service. You can also load your remaining prepaid
+                calling card value on the App or through the website to your Esdiac’s account. You can get the calling
+                card at any of our authorized retailers.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>3.3 Intellectual Property Rights.</strong> Permission is granted to download a copy of Esdiac
+                Global Systems Inc.’s App onto a device which you own or control to view, use and display the App for
+                personal, non-commercial purposes only. This is the grant of a license, not transfer of title, and under
+                this license you many not modify or copy the materials for any commercial purpose, or for any public
+                display (commercial or non-commercial), attempt to decompile or reverse engineer any software contained
+                on Esdiac Global Systems Inc.’s website, remove any copyright or other proprietary notations from the
+                materials or transfer the materials to another person or “mirror” the materials on any other server.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                Esdiac Global System Inc. remains the sole owner of the Website, App and other Services, we do not sell
+                the Website and App to you. Not limiting the afore mentioned, in relation to the App, we license the use
+                of the App to you on the basis of the Term of Service which are subject to any rules or policies applied
+                by Apple Inc. and or Google Inc., and any other entity within the Apple or Google group.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                This license shall automatically terminate if you violate any of these restrictions and may be
+                terminated by Esdiac Global Systems Inc. at any time. Upon terminating your viewing of these materials
+                or upon the termination of this license, you must destroy any downloaded materials in your possession
+                whether in electronic or printed format.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                Nothing in these Terms of service gives you the right to use any of our trade names, trademarks, service
+                marks, logos, domain names or other distinctive brand features, except as may be contained in or
+                otherwise used within the Services provided to you.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>3.4 Payments.</strong> You can fund your registered account through the App or our Website by
+                using any acceptable forms of payment which includes your debit card or credit card made or any payment
+                setups and methods made available to you by Esdiac.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                You can also buy Esdiac’s prepaid calling card at any of our authorized retailers to top-up your
+                account. We don’t have an automatic recharge function yet. All payments are done manually. All credit
+                and debit card payment are processed through third party services.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>3.5 Charges</strong> Currently, all our services are pay as you go and are charged on a per
+                minute rate to the destination called. On all our services, we charge a 35¢ service fee after the first
+                call initiation and every 30 days thereafter. The websites display rates per minute for both landline
+                and mobile device, rates may differ depending on the destination called.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                The total cost of each call is rounded to the next full cent. All charges incurred are automatically
+                deducted from the account or prepaid calling card. All charges are billed in US dollars. If you have any
+                further question about any of our services you may contact us at 1-213-351-1348 and if you reside within
+                US, call 1-855-373-4222. The continuous use of our service indicates that you agree to accept any
+                adjustments when there is a change in rates or charges.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                Esdiac may change the minute per rate at any time without prior notice and be effective immediately they
+                reflect on the website.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>3.6 Roaming Additional Charges.</strong> You may need to pay for additional roaming charges if
+                you are not in a location that supports your mobile carrier and you roam on a third party’s facilities
+                for internet access. Esdiac App operates with the presence of internet and the Prepaid Calling Card
+                Service is for US residents only. If there is any event where you belief you have been mischarged,
+                kindly email our customer service at support@esdiacapp.com within 90 days after the error first occur or
+                within 120 days after the error occurred. No refund would be credited if any of the time limits are
+                exceeded.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>3.7 Refunds.</strong> We do not offer any refund for amounts you purchased for your app account
+                or any unused balance, they do not have cash value whatsoever. If an interruption or failure occurs
+                because of us and not from events beyond our control, caused by third party and not by you, you may be
+                entitled to be a credit applied to your app account. You must contact our Customer Service either by
+                phone call or email to support@esdiacapp.com. Esdiac retains the right to refuse to grant the request if
+                (1) you violate the User Agreement (2) you are using the service for fraudulent activities or (3) you
+                are trying to exploit the credit policy. Credits will not be awarded in cash.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>3.8 Promotional Offers.</strong> Esdiac may provide promotions to related to our App users. You
+                agree that Esdiac reserves the right to restrict promotional offers to certain users, locations and any
+                other restrictions or conditions applicable to such offers. If a user is abusing the terms of the
+                promotional offer, Esdiac has the right to terminate or prohibit the user from continuous use of the
+                App. Esdiac also reserves the right to expire and remove any promotional balance from the user’s account
+                on the App.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>3.9 Credit Expiration.</strong> Your credit balance on the Account does not expire but note that
+                there is service fee at the end of every month after first call initiation.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>3.10 Emergency Calls.</strong> The services do not and are not intended to support or carry
+                emergency calls to any type of hospitals, law enforcement agencies, medical care unit or any type of
+                emergency services of any kind and Esdiac is not liable in any manner for such calls.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                4. All Services General Terms
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>4.1 Use of Services</strong> As a user of Esdiac Services, you agree that you are to use the
+                Services in such a way that is permitted by the Terms of Service and to act in compliance with any
+                applicable law, regulations and generally accepted practices or guidelines in the relevant
+                jurisdictions, including but not limited to any applicable export laws and regulations. Esdiac Services
+                are not for commercial use and or for transfer to a third party.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                Esdiac will provide you a right of use to Services applicable in exchange for your payment and in
+                accordance to User Agreement. We may also without notice, impose a limit to your access or use of any of
+                the Services. Esdiac is not responsible to you or any third party for any data, content or resources
+                that you share with other users using the Services, and the implications of such actions. You agree that
+                Esdiac maintains the right to make changes, remove or suspend access to any Service at any time without
+                notice.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>4.2 Limitation of Liability.</strong> To the fullest extent permissible by applicable law, in no
+                event shall Esdiac or its parent or affiliated companies be liable to you for any personal injury,
+                property damage, lost profits, cost of substitute goods or services, loss of data, loss of goodwill,
+                work stoppage, computer and/or device or technology failure or malfunction or for any form of direct or
+                indirect, special, accidental, consequential, exemplary or punitive damages based on any causes of
+                action arising out of use if the website, mobile app and prepaid calling card or any alleged failure of
+                performance, error, omission, interruption, deletion, defect or delay in service, operation or
+                transmission of websites or any alleged computer virus, communication line failure, theft or destruction
+                of property and/or unauthorized access to, alteration of, or use of or posting of any record, content,
+                or technology, pertaining to or on the websites.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                You agree that this limitation of liability applies whether such allegations are for breach of contract,
+                tortious behavior, negligence or fall under any other cause of action, regardless of the basis upon
+                which liability is claimed and even if the Esdiac or Parent or affiliated companies have been advised of
+                the possibility of such loss or damage.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                Without limiting the generality of the forgoing, you also specially acknowledge that Esdiac or Parent or
+                affiliated companies are not liable for any actual or alleged defamatory, offensive, or illegal conduct
+                of other users of the website or any other third parties. Esdiac reserves the right to update or revise
+                the User Agreement at any time without prior notice. The User Agreement should be checked and read
+                periodically on the Website for any changes that may have been introduced.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                The continued use of Esdiac’s Website, App or the prepaid calling card post changes introduced
+                constitutes acceptance of those changes. If you do not agree to the terms of use, please do not purchase
+                or use any of the services through the Website, App or the Prepaid calling card. In the case where there
+                is conflict between the User agreement on the Website, in the App or any materials of our Services, then
+                the terms of this User Agreement will be used. This User Agreement also governs your purchase and use of
+                any of Esdiac’s service at any retailing locations, on the Website or through the App.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                In any event, and without limiting the generality of this Section to the extent permitted by law, you
+                agree that Esdiac’s total aggregate liability to you for all damages and losses that arise in connection
+                with the use or inability to use the Services or otherwise arise under the Terms of Service, shall not
+                in any circumstance exceed the amount actually paid by you, if any, to us for the Services (including
+                without limitation to the Prepaid calling card Services) in the 5 month period immediately prior to the
+                date of the event giving rise to the claim, subject to a maximum of $1, 000.00 in all cases.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>4.3 Your Device and Unauthorized Access.</strong> In the event that your device was stolen,
+                missing or you noticed an unauthorized access or use of any Service, you must notify us immediately to
+                suspend the Service. You are responsible for the charges and all the usage of the Service until it is
+                suspended. You are responsible for preventing unauthorized use and access of the Service and you have
+                the right to terminate the Account and cancel the Service at any time. Esdiac will not take any
+                responsibility for your failure to comply with the obligations in this Section “Your Device and
+                Unauthorized Access”.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>4.4 Your Location</strong> You are solely responsible to ensure that you are legally allowed to
+                use our Services where you are located. You must comply with the legal restrictions and prohibition that
+                may be applicable against the use of the Services and stop accessing and or using the Services.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>4.5 Third Party Services.</strong> The use of Esdiac Services depends on third party services,
+                including international carriers, local termination partners and your local telecom and mobile operator.
+                You acknowledge that the use of our Services is dependent on the afore mentioned third party and that
+                our Services are not traditional mobile, fixed line telephone service or a replacement for your primary
+                telephone service.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                Be informed that Voice over Internet Protocol (VoIP) functionality might be restricted or prohibited by
+                some providers and might impose extra charges in connection with the use of the Services. You are
+                responsible for confirming with your mobile operator (and or any other Provider that you are using in
+                relation to the use of the Services) that the use of the Services is permitted in accordance with any
+                contractual agreement you may have with that Provider, and to pay if there is any impose fees.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>4.6 Restriction and Prohibition Use.</strong> You agree to use the Service in such a way that is
+                permitted by the Terms of Service and to act accordingly and in compliance to any applicable law,
+                regulation or generally accepted practices or guidelines in the relevant geographical locations.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                If any law forbids or restrict you from using the Service, you must comply with those legal restrictions
+                or if applicable stop accessing or using the Services. The following list though not exhaustive provides
+                examples of prohibited conduct and use of the Services. You agree not to:
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                • Use the Account, Website, App, Software or any or part of the Services in any fraudulent way;<br />
+                • Use the Services for any unlawful, fraudulent purpose, or any manner against the Term of Service, or
+                act maliciously by hacking or injecting malicious code, including viruses, or harmful data into the App,
+                any Services or any operating system;<br />
+                • Infringe on Esdiac’s intellectual property rights or those of any third party related to the use of
+                the Services;<br />
+                • Convey any communication that is slanderous, offensive or otherwise objectionable in relation to your
+                use of Services;<br />
+                • Not use the Service to transmit unsolicited communications (sometimes referred to as “spam”), or any
+                communication not permitted by applicable law or use of the Service for illegal purposes which entails
+                and not restricted to impersonating, phishing or misrepresentation;<br />
+                • Not use the Services in a way that could damage, disrupt, impair or compromise Esdiac’s or any third
+                party’s systems or other users;<br />
+                • Submit or post to the Site, otherwise expose any third party to or use any material or content which
+                infringe any third party’s intellectual property rights or violate the rights of any third party;<br />
+                • Submit or post to the Site, or otherwise expose any third party to any material or content which is
+                illegal, offensive, indecent, harmful to minors, defamatory, racist, pornographic or otherwise, in
+                Esdiac’s sole discretion, is objectionable;<br />
+                • Intercept or monitor, damage, transmit or modify any communication that is not meant for you;<br />
+                • Sell, assign, rent, lease, distribute, market, disclose, export, import, act as an intermediary or
+                provider or otherwise grant rights to third parties with regard to, the Services (or any part
+                thereof);<br />
+                • Use the Services (or any part thereof) within or to provide commercial products or services to third
+                parties (the foregoing shall not preclude you using the Services for your own business communications);
+                and/or
+
+
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                Not limiting the generality of the aforementioned, you are unauthorized to use Esdiac’s Services for
+                calling numbers (whether singly, automatically or sequentially) to generate income for yourself or
+                others. Esdiac may, at its option, immediately suspend any account or Services in relation to your or
+                terminate the Terms of Service with you if any of your activities shows suspicious call patterns,
+                excessive calls to single or multiple numbers within a short duration that is not consistent with normal
+                or individual use.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                Auto-dialing, sending excessive or spam messages, excessive usage or fax/voice blasts will be considered
+                as indicators of such unauthorized or excessive use.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>4.7 Information Disclosure.</strong> Esdiac reserves the right at all times to disclose any data
+                or information in any form as Esdiac deems necessary to satisfy any applicable law, regulation, legal
+                process or government request or to edit, refuse to post or to remove or restrict any information or
+                materials, in whole or in part, in Esdiac’s sole discretion.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>4.8 No Warranties</strong> You expressively acknowledge and agree that use of the Services is at
+                your sole risk and that the entire risks to satisfactory quality, performance, accuracy and effort is
+                with you. To the maximum extent permitted by applicable law, the Services are provided “as is” and “as
+                available”, with all faults and without warranty of any kind and we hereby disclaim all warranties and
+                conditions with respect to the Services, Website, App and any product associated with Esdiac either
+                express, implied or statutory, including, but not limited to, the implied warranties and/or conditions
+                of merchantability, of satisfactory quality, of fitness for a particular purpose, of accuracy, of quiet
+                enjoyment, and non-infringement of third party rights.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                We do not warrant against your enjoyment of the Services or that the Services will be uninterrupted or
+                error-free, or that defects in the Services will be corrected. No oral or written information or advice
+                given by us shall create a warranty.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                Should the service cause any defects, you assume the entire cost of all necessary servicing, repair or
+                correction. Additionally, you also understand that Esdiac cannot guarantee that information or
+                communications transmitted in relation to the use of Services will not be subject to power outages,
+                disruptions from internet service, disruption in the Services and interception by law enforcement
+                officials or other third parties because the Services will be transmitted through public Internet lines
+                and the public switched telephone network.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>4.9 Communication Content</strong> The content of the communications made using the Services are
+                entirely determined by the person from whom such content originates. You may therefore be exposed to the
+                content that is offensive, harmful, indecent or otherwise objectionable. Esdiac will not be liable for
+                any type of communication spread by the means of the Services.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>4.10 Suspension of Services</strong> Esdiac has the right without any liability to refuse to
+                provide, restrict, limit, change, remove, disable, suspend and/or interfere or interrupt the Services or
+                any part thereof, at any time and without any prior notice to you, for the repair, improvement, and/or
+                upgrade of the Service, or for any reasons for termination set forth in the Terms of Service or any
+                corporate or business reason
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                5. Termination and Suspension
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                The Terms of Service is effective and binding until terminated by you or Esdiac. You may terminate the
+                Terms of Service at any time by stopping to use the Services, Website and App. Esdiac may terminate the
+                Terms of Service with you or suspend your use of the Services at any time if:
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                • You violate any of the terms and conditions of the Terms of Service;<br />
+                • If you are using the Service illegally or for any fraudulent activities or your Account is being used
+                by a third party fraudulently;<br />
+                • You are misusing or trying to exploit our policies;<br />
+                • Delinquent with respect to any charges due for the Services;<br />
+                • Subject to any proceeding under bankruptcy, insolvency liquidation or similar laws;<br />
+                • Excessive calling patterns, billing irregularities, misuse of service or promotions or campaigns and
+                fraudulent usage;<br />
+                • If required due to a change in laws or regulations applicable to Esdiac and or required by Esdiac’s
+                service providers.<br />
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                Upon termination: all rights granted to you under the Terms of Services shall end; you must immediately
+                stop all activities authorized by the Terms of Services, including your use of any Services; the App,
+                Software and other Services related to your use of the Services in your possession must be deleted,
+                destroyed or removed immediately. Esdiac shall execute the termination by preventing you to access the
+                Account or other part of the Services, where applicable.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                6. General Provisions
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>6.1 Taxes</strong> You are responsible for and must pay any applicable taxes in connection with your purchase and
+                use of any of the Services.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>6.2 Communication</strong> You authorize Esdiac to send or provide the following categories of information
+                (“Communications”) by electronic means and not in paper format:
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                1. This user Agreement and any amendments, modifications or supplements to it;<br/>
+                2. Your purchase and records of use regarding Service transactions;<br/>
+                3. Any initial, periodic or other disclosures or notices provided in connection with the Services,
+                including without limitation those required by U.S. federal, state or other applicable law;<br/>
+                4. Any customer service communications, including without limitation, communications with respect to claims
+                or error or unauthorized use of the Services and any other communication related to the Services, a
+                transaction or Esdiac.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                Electronic means may include SMS/MMS, emails, text, push notification through the App, App to App, Website chat with customer service, or posting on the Websites. Messages and data rates may apply when you receive SMS/MMS, text or push notification messages on your mobile phone. You may withdraw your consents to receive any form of communication from us at any time. You must contact us in order to withdraw your consent. 
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                You must have the following to electronic communication with us: a mobile device or an internet connection or data, an active telephone number and an internet browser that supports 128-bit encryption. Unless otherwise required by applicable law. 
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>6.3 Consent to Receive Messages</strong> You consent to receive SMS/MMS, push notifications through the App, text messages and or email from Esdiac by using any of the Services. This consent is specific to the phone number you provide to us to open account and use the Services. Messages and data rates may apply when you receive SMS/MMS, text or push notification messages on your mobile phone. 
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                You may withdraw your consents to receive any form of communication from us at any time. Your ability to manage and use certain features of the Services could be limited if you refuse or withdraw your consent to receive these messages. 
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>6.4 No Third Party Right</strong> The provisions of this User Agreement are for you and Esdiac’s benefit and not for any third party. 
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>6.5 Acts Beyond Our Control</strong> Esdiac will not be held responsible or be in breach of this User Agreement for any failure in performances, loss or damage due to events beyond our control, including without limitation to volcanic eruption, earthquake, fire, tornado, strike, labor dispute, war, civil or military authority, acts of God, acts or omissions of carriers or suppliers and acts of regulatory or government agencies.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+               <strong>6.6 Agreement</strong> The Terms of Service represent the entire agreement between you and Esdiac relating to the use of the Websites, App and Calling card and any other part of the Services, and supersedes any all prior offers, understandings, agreements and representations whether written or oral with respect to the Service or any other subject matter covered by the Terms of Service. For the purpose of clarification, the Terms of Service supersede all promises made to you whether written or oral by our client services agents, representatives or employees, advertisements or product description. 
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                The Terms of Service may not be changed, modified or amended except as described herein by Esdiac or otherwise with the written agreement Esdiac. If any part of this User Agreement is found invalid, the rest of the User Agreement will continue in full force and effect. 
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>6.7 Assignment</strong> You may not assign or transfer any rights or obligations under the Terms of Service to any third party without prior consent of Esdiac. Esdiac may assign all or part of the rights and or obligations under the Terms of Service without notice to you.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>6.8 Notices</strong> Any notice from Esdiac to you under this User Agreement will be provided by one or more of the following: posting on the Websites, SMS/MMS text, email or call to your phone number that you provided to us. You may contact Esdiac either by phone or email. 
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>6.9 Waiver</strong> Failure of Esdiac to exercise or day in exercising a legal right or remedy provided by this User Agreement or by law shall not constitute a waiver of Esdiac’s right or remedy. If Esdiac decided to waive a breach of this User Agreement, the waiver shall not operate as a waiver for subsequent breach of the User Agreement.
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>6.10 Governing</strong> Law This User Agreement will be governed by the law of the State of California, without regard to its choice of law of rules. This governing law provision applies no matter where you reside, or where you use, purchase or pay for the Services. 
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>6.11 Indemnification</strong> You agree to indemnify, defend and hold harmless Esdiac and its subsidiaries, affiliates, officers, directors, employees and agents and any other service provider who furnishes services to you in connection with the Services from any claim or demand or governmental investigation or enforcement action (including any related costs and expenses) made by any third party due to or arising out of your use of the Services (not limited to any materials submitted and posted), your breach of Terms of Service, your violation of rights of another person or entity. 
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                <strong>6.12 Changes to Agreement</strong> Esdiac may in sole discretion change the terms of this User Agreement or information on the Websites at any time with or without notice. 
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                Any Changes made will be updated in the Terms of Service on the Website. Unless the Terms of Service warrants immediate changes, such as security or laws and regulations, changes made will be updated on the website on or before the effective date of the change. 
+            </p>
+            <p class="text-lg text-gray-600 mb-16">
+                Continuous use of the Services after the publication of any change means you agree to the change and the Updated User Agreement. 
+            </p>
+            <p class="text-lg text-gray-600 pb-16">
+                <strong>6.13 Last Updated</strong> This User Agreement was last updated on June 8, 2019.
+            </p>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-[#001A33] text-white py-6">
+        <div class="w-[95%] md:w-[83%] mx-auto">
+            <div class="md:flex md:justify-between">
+                <div>
+                    <img class="w-24 h-24 mb-6 md:mb-0" src="../assets/images/esdiac-logo-white-768x768.png"
+                        alt="Esdiac logo" />
+                    <h2 class="text-white opacity-80 mt-6">
+                        At ESDIAC we believe in innovation, <br /> in honest marketing and advertisement <br />
+                        of our products, and providing <br /> you with the best possible experience.
+                    </h2>
+                </div>
+                <div class="grid grid-cols-1">
+                    <div class="mt-8 md:mt-0 mb-8 md:mb-0">
+                        <div class="flex justify-between items-center">
+                            <h2 class="mb-2 md:mb-6 text-sm font-semibold text-white uppercase">Information
+                            </h2>
+                        </div>
+                        <ul class="text-white opacity-80">
+                            <li class="mb-4">
+                                <a href="#">Our Products</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="../pages/howitworks.html">How it Works</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="../pages/aboutus.html">About Us</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="../pages/termsofservice.html">Terms of Service</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="../pages/privacypolicy.html">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1">
+                    <div class="mb-8 md:mb-0">
+                        <div class="flex justify-between items-center">
+                            <h2 class="mb-2 md:mb-6 text-sm font-semibold text-white uppercase">Contact us
+                            </h2>
+                        </div>
+                        <ul class="text-white opacity-80">
+                            <li class="mb-4">
+                                <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-geo-alt-fill w-5 h-5 mr-2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                    </svg>
+                                    <span>
+                                        Esdiac Global Systems Nig. Ltd <br />
+                                        2357 Alhaji Bature Street
+                                        Talhudu, Kano State.
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="mb-4">
+                                <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-telephone-fill w-5 h-5 mr-2" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                    </svg>
+                                    <span>+234 (0704)154-0296</span>
+                                </div>
+                            </li>
+                            <li class="mb-0">
+                                <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-envelope-at-fill w-5 h-5 mr-2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z" />
+                                        <path
+                                            d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z" />
+                                    </svg>
+                                    <span>www.esdiacapp.ng</span>
+                                </div>
+                            </li>
+                            <li class="mb-4 ml-[30px]">
+                                <span>www.esdiacoffice.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-600" />
+            <div class="">
+                <span class="block text-sm text-white text-center opacity-80">
+                    &copy;2022 Esdiac Global Systems Nig. Ltd. All rights reserved.
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../assets/js/index.js"></script>
+
+</html>
